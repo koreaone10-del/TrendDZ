@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg" android:padding="16dp">
+
+    <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="TrendDZ  •  Product Engine" android:textColor="@color/text" android:textSize="24sp" android:textStyle="bold"
+        android:gravity="center" android:paddingBottom="4dp" />
+    <TextView android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="استورد الرابط → اجلب الصورة مباشرة → احفظ المنتج" android:textColor="@color/muted" android:textSize="13sp" android:gravity="center" android:paddingBottom="14dp" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/tabAdd" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1" android:text="إضافة منتج" />
+        <Button android:id="@+id/tabProducts" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1" android:text="المنتجات" />
+        <Button android:id="@+id/tabExport" android:layout_width="0dp" android:layout_height="46dp" android:layout_weight="1" android:text="Export JS" />
+    </LinearLayout>
+
+    <ScrollView android:id="@+id/scroll" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="12dp" />
+    </ScrollView>
+
+    <WebView android:id="@+id/web" android:layout_width="1dp" android:layout_height="1dp" android:visibility="gone" />
+</LinearLayout>
